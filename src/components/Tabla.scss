@@ -1,0 +1,42 @@
+@import "../utils/def.scss";
+
+$dark1: #27374D;
+$dark2: #526D82;
+$light2: #9DB2BF;
+$light1: #DDE6ED;
+
+$blueDark1:#0B2447;
+$blueDark2:#19376D;
+$bluelight2:#576CBC;
+$bluelight1:#A5D7E8;
+
+$darkContrast:#5C469C;
+$lightContrast:#D4ADFC;
+
+table.tabla-alta {
+    border-collapse: collapse;
+    width: 95%;
+    margin: 1rem auto;
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: $bluelight2;
+    }
+    tbody tr:nth-child(2n + 1){
+        background-color: rgba($color: $darkContrast, $alpha: 0.6);
+        &:hover{
+            background-color: rgba($color: $darkContrast, $alpha: 0.4);
+        }
+    }
+    tbody tr:nth-child(2n){
+        background-color: rgba($color: $bluelight2, $alpha: 0.5);
+        &:hover{
+            background-color: rgba($color: $bluelight2, $alpha: 0.4);
+        }
+    }
+}
